@@ -35,14 +35,33 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+
+
+gem 'activerecord-tableless'
+gem 'compass-rails', '~> 2.0.alpha.0'
+gem 'figaro'
+gem 'gibbon'
+gem 'google_drive'
+gem 'high_voltage'
+gem 'simple_form'
+gem 'zurb-foundation'
+
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
 
 group :development do
+
+  gem 'better_errors'
+ # gem 'quiet_assets'
+  gem 'rails_layout'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+  
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
