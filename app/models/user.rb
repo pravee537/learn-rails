@@ -42,6 +42,7 @@ class User < ApplicationRecord
     def new_token
       SecureRandom.urlsafe_base64
     end
+   end
 
     # Returns true if the given token matches the digest.
   def authenticated?(remember_token)
